@@ -12,7 +12,7 @@ const App = () => {
       data.map(i=>{
          return <div >
       <h1 key={i.id}>{i.name}</h1>
-      <p key={i.id}>{i.age}</p>
+      <p key={i.id}>{i.email}</p>
       </div>
       })
      }

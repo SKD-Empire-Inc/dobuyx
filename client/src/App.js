@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 const App = () => {
   const [data,setData]=useState([]);
   useEffect(function fetchdata(){
-    fetch("http://localhost:3000/users").then(res=>res.json())
+    fetch("http://16.171.171.88:3000/users").then(res=>res.json())
     .then(res=>setData(res)).catch((err)=>console.log(err))
   },[]);
   return (
